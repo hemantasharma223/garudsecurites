@@ -1136,6 +1136,14 @@ option {
 .intro {
     background: #fff;
     padding: 30px 0px;
+    border-bottom: 3px solid #87ceeb;
+}
+#description{
+    padding-top: 17px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: justify;
+    text-decoration: dashed;
 }
 
 .welcome-title {
@@ -1773,7 +1781,7 @@ input[type="email"] {
     height: 150px;
     display: inline-block;
     color: #fff;
-    background: #CBA246;
+    background: lightcoral;
     line-height: 50px;
     font-size: 24px;
     -moz-transition: .3s;
