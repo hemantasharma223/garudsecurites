@@ -31,215 +31,100 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>   
 <meta name="yandex-verification" content="08a52e06942a55f2" />
-<style>
-    /* Reset some default styles */
-
-
-/* Basic styling for the navigation container */
-#main-nav {
-    background-color: #333;
-    padding: 5px;
-}
-
-/* Style for the menu toggle button */
-.main-menu-btn {
-    display: none;
-    cursor: pointer;
-    color: #fff;
-}
-
-/* Styling for the hamburger icon */
-.main-menu-btn-icon::before {
-    content: "\2630"; /* Unicode character for the hamburger icon */
-    font-size: 15px;
-}
-
-/* Media query for responsive design */
-@media screen and (max-width: 768px) {
-    .main-menu-btn {
-        display: block;
-    }
-    
-    #main-menu {
-        display: none;
-    }
-    
-    #main-menu:checked + .main-menu-btn + #main-menu {
-        display: block;
-    }
-}
-
-/* Styling for the main menu items */
-#main-menu {
-    list-style: none;
-    display: flex;
-    align-items: left;
-    justify-content: flex-end;
-}
-
-#main-menu li {
-    margin-left: 5px;
-}
-
-#main-menu li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-#main-menu li a:hover {
-    color: #ff9900; /* Change to your desired hover color */
-}
-
-/* Styling for the logo */
-.nav-home img {
-    height: 50px;
-}
-</style>
 </head>
 <body>
-<div class="bg">
-    <div id="progress-bar"></div><!--progress-bar-->
-<div class="top-nav top-nav-fixed">
-    <div class="container">
-        <div class="row">
-    <div class="col-md-10 col-xs-4">
-        <nav id="main-nav" role="navigation">
-                            <!-- Mobile menu toggle button (hamburger/x icon) -->
-                <input id="main-menu-state" type="checkbox" />
-                <label class="main-menu-btn" for="main-menu-state"> <span class="main-menu-btn-icon"></span> <span class="menu-text">Menu</span></label>
-                <ul id="main-menu" class="sm sm-clean">
-                    <li class="nav-home">
-                        <a href="index.html" title="Home"><img src="img/lakeshasecurity.png" alt="Logo"></a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-service" title="Services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-profile" title="Profile">About us</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-training" title="Training">Training</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-news" title="News">News</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-media" title="Media">Media</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-clients" title="Clients">Clients</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-governance" title="Governance">Governance</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-ebrochures" title="eBrochures">eBrochures</a>
-                    </li>
-                    <li>
-                        <a href="#tmpl-contact" title="Contact">Contact</a>
-                    </li>
-                            </ul>
-                    </nav>
-    </div>
-   
-    </div>
-</div>    </div><!--container-->
-</div><!--top-nav-->    <div class='content-main'>
-        
-        
-<div class="slide-wrap" id="tmpl-home">
-    <div class="">
-        <div class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="./img/lakesh-sec-guard.jpg" title="YOU ARE IN  SAFE HANDS"/>
-                    <div class="flex-caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <img src="./img/lakeshasecuritylong-removebg-preview.png" alt="YOU ARE IN  SAFE HANDS">
-                                    <h2>YOU ARE IN  SAFE HANDS</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--flex caption-->
-                </li>
+    <div class="banner">
+        <nav id="navbar">
+            <a href="index.html" title="Home"><img src="./img/lakeshasecuritylong.png" alt="" class="lakesha_logo"></a>
+            <ul>
+                <li><a href="#tmpl-service">Services</a></li>
+                <li><a href="#tmpl-profile">About Us</a></li>
+                <li><a href="#tmpl-training">Training</a></li>
+                <li><a href="#tmpl-news">News</a></li>
+                <li><a href="#tmpl-media">Media</a></li>
+                <li><a href="#tmpl-clients">Clients</a></li>
+                <li><a href="#tmpl-governance">Governance</a></li>
+                <li><a href="#tmpl-ebrochures">Ebrochures</a></li>
+                <li><a href="#tmpl-contact">Contact</a></li>
+                
             </ul>
-        </div> <!--flexslider-->
-    </div>
-</div><!--slide-wrap-->
-<div class="intro" id="tmpl-service">
-    <div class="container">
-        <div class="welcome-title gap-bottom">
-            <div class="row">
-                <div class="col-sm-4 w-title-bar">
-                    <h2>SECURITY SERVICES</h2>
-                </div><!--col--> 
-                <div class="col-sm-8 welcome-title-intro"><p>The wide range of services we offer efficiently encompasses the entire scope of security industry</p>
-                </div><!--col-->                
-            </div><!--row--> 
+            <div id="content"></div>
+        </nav>
+        <div class="content">
+            <h1>YOU ARE IN SAFE HANDS</h1>
         </div>
-        <div class="row-mod">  
-            <div class="col-sm-3">
-                <p id="description"> Founded on the principles of professionalism, dedication, and commitment, we at Lakesha Securities work hard to ensure that our practices at all times are guided by these very principles, and that our work is always reflective of the standards that we have set not only for ourselves but for the security industry at large.</p>
+    </div>   
+<div class='content-main'>
+    <div class="intro" id="tmpl-service">
+        <div class="container">
+            <div class="welcome-title gap-bottom">
+                <div class="row">
+                    <div class="col-sm-4 w-title-bar">
+                        <h2>SECURITY SERVICES</h2>
+                    </div><!--col--> 
+                    <div class="col-sm-8 welcome-title-intro"><p>The wide range of services we offer efficiently encompasses the entire scope of security industry</p>
+                    </div><!--col-->                
+               </div><!--row--> 
             </div>
-            <div class="col-sm-9">          
-                <div id="owl-demo" class="owl-carousel">
-                    <div class="item">
-                            <h3>MANNED GUARDING</h3>
-                            <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg" alt="MANNED GUARDING">
-                            <div class="item-inner">
-                                <p>Our team of top professionals combined with the use of advanced technology offer man guarding solutions, which includes various services that are… <a href="#" title="MANNED GUARDING">Read More</a></p>
-                            </div>
-                        </div><!--item-->
+            <div class="row-mod">  
+                <div class="col-sm-3">
+                    <p id="description"> Founded on the principles of professionalism, dedication, and commitment, we at Lakesha Securities work hard to ensure that our practices at all times are guided by these very principles, and that our work is always reflective of the standards that we have set not only for ourselves but for the security industry at large.</p>
+                </div>
+                <div class="col-sm-9">          
+                    <div id="owl-demo" class="owl-carousel">
                         <div class="item">
-                            <h3>Security Consultancy</h3>
-                            <img src="./img/security-consultant.jpg" alt="Security Consultancy">
-                            <div class="item-inner">
-                                <p>Lakesha Securities has always been customer centric. Client’s safety is our top most priority and that is what we advocate. Bearing in mind that every… <a href="#" title="Security Consultancy">Read More</a></p>
-                            </div>
-                        </div><!--item-->
-                        <div class="item">
-                            <h3>CASH & VALUABLES IN TRANSIT</h3>
-                            <img src="https://www.garudsecurities.com.np/public/images/upload/service/transport-service.JPG" alt="CASH & VALUABLES IN TRANSIT">
-                            <div class="item-inner">
-                                <p>Our fleet of purpose-built vehicles, which are distributed across an extensive network of local branches, guarantees safety and national coverage. Our… <a href="#" title="CASH & VALUABLES IN TRANSIT">Read More</a></p>
-                            </div>
-                        </div><!--item-->
-                        <div class="item">
-                            <h3>Electronic security</h3>
-                            <img src="https://www.garudsecurities.com.np/public/images/upload/service/cc.jpeg" alt="Electronic security">
-                            <div class="item-inner">
-                                <p>Our security services comprises of skilled professionals and state-of-the-art technology. The continuous training of our employees and the ongoing R&D… <a href="#" title="Electronic security">Read More</a></p>
-                            </div>
-                        </div><!--item-->
-                        <div class="item">
-                            <h3>TRAINING SERVICE</h3>
-                            <img src="./img/training.jpg" alt="TRAINING SERVICE">
-                            <div class="item-inner">
-                                <p>Every year around 750 individuals are trained by Garud security for other organisations. Apart from our regular guard training, we also conduct Risk… <a href="#" title="TRAINING SERVICE">Read More</a></p>
-                            </div>
-                        </div><!--item-->
-                        <div class="item">
-                            <h3>FACILITIES SERVICE</h3>
-                            <img src="https://www.garudsecurities.com.np/public/images/upload/service/facilities-service.JPG" alt="FACILITIES SERVICE">
-                            <div class="item-inner">
-                                <p>The facilities service we offer is in sync with the client’s flow of activity. These services range from general housekeeping, gardening, maintenance,… <a href="#" title="FACILITIES SERVICE">Read More</a></p>
-                            </div>
-                        </div><!--item-->
-                        <div class="item">
-                            <h3>EVENTS</h3>
-                            <img src="https://www.garudsecurities.com.np/public/images/upload/service/events.jpg" alt="EVENTS">
-                            <div class="item-inner">
-                                <p>Lakesha Securities experience in crowd control management and security service at various Events is unmatched, in the industry. Our Event Security… <a href="#" title="EVENTS">Read More</a></p>
-                            </div>
-                        </div><!--item-->
-                    </div><!--owl-carousel-->
+                                <h3>MANNED GUARDING</h3>
+                                <img src="https://www.garudsecurities.com.np/public/images/upload/service/man-guarding.jpeg" alt="MANNED GUARDING">
+                                <div class="item-inner">
+                                    <p>Our team of top professionals combined with the use of advanced technology offer man guarding solutions, which includes various services that are… <a href="#" title="MANNED GUARDING">Read More</a></p>
+                                </div>
+                            </div><!--item-->
+                            <div class="item">
+                                <h3>Security Consultancy</h3>
+                                <img src="./img/security-consultant.jpg" alt="Security Consultancy">
+                                <div class="item-inner">
+                                    <p>Lakesha Securities has always been customer centric. Client’s safety is our top most priority and that is what we advocate. Bearing in mind that every… <a href="#" title="Security Consultancy">Read More</a></p>
+                                </div>
+                            </div><!--item-->
+                            <div class="item">
+                                <h3>CASH & VALUABLES IN TRANSIT</h3>
+                                <img src="https://www.garudsecurities.com.np/public/images/upload/service/transport-service.JPG" alt="CASH & VALUABLES IN TRANSIT">
+                                <div class="item-inner">
+                                    <p>Our fleet of purpose-built vehicles, which are distributed across an extensive network of local branches, guarantees safety and national coverage. Our… <a href="#" title="CASH & VALUABLES IN TRANSIT">Read More</a></p>
+                                </div>
+                            </div><!--item-->
+                            <div class="item">
+                                <h3>Electronic security</h3>
+                                <img src="https://www.garudsecurities.com.np/public/images/upload/service/cc.jpeg" alt="Electronic security">
+                                <div class="item-inner">
+                                    <p>Our security services comprises of skilled professionals and state-of-the-art technology. The continuous training of our employees and the ongoing R&D… <a href="#" title="Electronic security">Read More</a></p>
+                                </div>
+                            </div><!--item-->
+                            <div class="item">
+                                <h3>TRAINING SERVICE</h3>
+                                <img src="./img/training.jpg" alt="TRAINING SERVICE">
+                                <div class="item-inner">
+                                    <p>Every year around 750 individuals are trained by Garud security for other organisations. Apart from our regular guard training, we also conduct Risk… <a href="#" title="TRAINING SERVICE">Read More</a></p>
+                                </div>
+                            </div><!--item-->
+                            <div class="item">
+                                <h3>FACILITIES SERVICE</h3>
+                                <img src="https://www.garudsecurities.com.np/public/images/upload/service/facilities-service.JPG" alt="FACILITIES SERVICE">
+                                <div class="item-inner">
+                                    <p>The facilities service we offer is in sync with the client’s flow of activity. These services range from general housekeeping, gardening, maintenance,… <a href="#" title="FACILITIES SERVICE">Read More</a></p>
+                                </div>
+                            </div><!--item-->
+                            <div class="item">
+                                <h3>EVENTS</h3>
+                                <img src="https://www.garudsecurities.com.np/public/images/upload/service/events.jpg" alt="EVENTS">
+                                <div class="item-inner">
+                                    <p>Lakesha Securities experience in crowd control management and security service at various Events is unmatched, in the industry. Our Event Security… <a href="#" title="EVENTS">Read More</a></p>
+                                </div>
+                            </div><!--item-->
+                        </div><!--owl-carousel-->
+                </div>
             </div>
-        </div>
-    </div><!--container-->
+        </div><!--container-->
 </div><!--intor-->
 <div class="why-us-cover flex-center gap-top-2x gap-bottom-2x">
     <div class="container">
@@ -474,28 +359,38 @@ DISTRICTS WE ARE ENGAGED IN PROVIDING SECURITY SERVICES </p>
         </div>
     </div><!--container-->
 </div><!--reasons wrap-->
-<div class="service-wrap" id="tmpl-training">
-    <div class="container">
-        <div class="row">
-                                            <div class="col-sm-4">
-                    <div class="service-inner">
+        <div class="serviceWrap">
+            <div class="recruitment-container">
+                <div id="recruitment">
+                    <div class="form-group">
                         <h3>RECRUITMENT</h3>
-                        <p>The recruitment team at Garud security follows strict hiring standards to filter quality applicants for the job. After which, each potential candidate is rigorously interviewed and skill tested on various grounds viz. mental ability, personality,&hellip; <a href="https://www.garudsecurities.com.np/service/recruitment" title="RECRUITMENT">Read More</a></p>
+                        <hr>
+                        <p>The recruitment team at Garud security follows strict hiring standards to filter quality applicants for the job. After which, each potential candidate is rigorously interviewed and skill tested on various grounds viz. mental ability, personality,&hellip; 
+                        <a href="#" title="RECRUITMENT">Read More</a></p>
                     </div>
                 </div>
-                                            <div class="col-sm-4">
-                    <div class="service-inner">
+            </div>
+            <div class="recruitment-container">
+                <div id="recruitment">
+                    <div class="form-group">
                         <h3>TRAINING</h3>
-                        <p>At Garud security, we strongly believe that well-trained and motivated people are the key to our success. Our in-house training department is committed to groom the employees by providing them industry and site specific training, to meet the&hellip; <a href="https://www.garudsecurities.com.np/service/training" title="TRAINING">Read More</a></p>
+                        <hr>
+                        <p>At Garud security, we strongly believe that well-trained and motivated people are the key to our success. Our in-house training department is committed to groom the employees by providing them industry and site specific training, to meet&hellip; 
+                        <a href="#" title="RECRUITMENT">Read More</a></p>
                     </div>
                 </div>
-                                            <div class="col-sm-4">
-                    <div class="service-inner">
-                        <h3>EMPLOYEES</h3>
-                        <p>At Garud security we evaluate and select the best of the local talent based on specific and uncompromising conditions. Expectations are set at the very beginning of the selection process. Our core team comprises of protection specialist and… <a href="https://www.garudsecurities.com.np/service/employees" title="EMPLOYEES">Read More</a></p>
+            </div>
+            <div class="recruitment-container">
+                <div id="recruitment">
+                    <div class="form-group">
+                        <h3>RECRUITMENT</h3>
+                        <hr>
+                        <p>At Garud security we evaluate and select the best of the local talent based on specific and uncompromising conditions. Expectations are set at the very beginning of the selection process. Our core team comprises of protection specialist and… 
+                        <a href="#" title="RECRUITMENT">Read More</a></p>
                     </div>
                 </div>
-                    </div><!--row-->
+            </div>
+        </div><!--row-->
     </div><!--container-->
 </div>
 <div class="why-us-cover flex-center gap-top-2x gap-bottom-2x why-us-cover-2">

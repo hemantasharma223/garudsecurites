@@ -93,6 +93,10 @@
 }
 
 .owl-carousel .owl-item {
+    margin: 10px 2px 5px 2px;
+    text-align:start;
+    background-color:#fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     float: left;
 }
 
