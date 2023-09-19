@@ -1,168 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Light And Dark Mode Toggle </title>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 
-    <link rel="stylesheet" href="temp.css">
-    <title>Hiking Kings</title>
+    <link rel="stylesheet" type="text/css" href="temp.css">
 </head>
+<body id="main-body">
 
-<body>
-        <nav id="navbar">
-            <a href="index.html" title="Home"><img src="./img/lakeshasecuritylong.png" alt="" class="lakesha_logo"></a>
-            <ul>
-                <li><a href="#tmpl-service">Services</a></li>
-                <li><a href="#tmpl-profile">About Us</a></li>
-                <li><a href="#tmpl-training">Training</a></li>
-                <li><a href="#tmpl-news">News</a></li>
-                <li><a href="#tmpl-media">Media</a></li>
-                <li><a href="#tmpl-clients">Clients</a></li>
-                <li><a href="#tmpl-governance">Governance</a></li>
-                <li><a href="#tmpl-ebrochures">Ebrochures</a></li>
-                <li><a href="#tmpl-contact">Contact</a></li>
-                
-            </ul>
-            <div id="content"></div>
-        </nav>
-    <div class="banner">
-        <div class="content">
-            <h1>YOU ARE IN SAFE HANDS</h1>
-        </div>
-    </div>
+<label>
+	<input type="checkbox" name="checkbox" class="toggle-checkbox" />
+	<div class="toggle-slot">
+		<div class="sun-icon-wrapper">
+			<div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"> </div>
+		</div>
 
-        <section class="product"> 
-            <h2 class="product-category">best selling</h2>
-            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
-            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
-            <div class="product-container">
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card1.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card2.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card3.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card4.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card5.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card6.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card7.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card8.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card9.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <span class="discount-tag">50% off</span>
-                        <img src="images/card10.jpg" class="product-thumb" alt="">
-                        <button class="card-btn">add to wishlist</button>
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">brand</h2>
-                        <p class="product-short-description">a short line about the cloth..</p>
-                        <span class="price">$20</span><span class="actual-price">$40</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    
-    <script src="temp.js"></script>
+		<div class="toggle-button"></div>
+			<div class="moon-icon-wrapper">
+			<div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"> </div>
+			</div>
+	</div>
+</label>
+<script src="temp.js"></script>
 </body>
 </html>

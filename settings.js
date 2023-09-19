@@ -2,8 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function() {
-        const navbar = document.getElementById("navbar");
-        const content = document.getElementById("content");
+        const navbar = document.getElementById("main-nav");
+        const content = document.getElementById("tmpl-service");
         const scrollTop = window.pageYOffset;
         
         if (scrollTop < content.offsetTop) {

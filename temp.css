@@ -1,269 +1,98 @@
-/* HEADER */
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Mulish", sans-serif;
+body.day {
+    background-color: #ffffff; /* Set your desired background color for day mode */
 }
 
-.banner {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-    url(./img/lakesh-sec-guard.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#navbar.fixed-nav{
-  background-color: gray;
-  color: #fff;
-}
-#navbar {
-  position: fixed;
-  width: 100%;
-  margin: 0; 
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(245, 238, 238, 0.2);
+body.night {
+    background-color: #121212; /* Set your desired background color for night mode */
 }
 
-.lakesha_logo {
-  margin-left: 2px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  height: 65px;
-  width: 250px;
-  cursor: pointer;
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.toggle-checkbox{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.toggle-slot{
+	position: relative;
+	height: 10em;
+	width: 20em;
+	border: 5px solid #e4e7ec;
+	border-radius: 10em;
+	background-color: white;
+	box-shadow: 0px 10px 25px #e4e7ec;
+	transition: background-color 250ms;
+}
+.toggle-checkbox:checked ~ .toggle-slot{
+	background-color: #374151;
+}
+.toggle-button{
+	transform: translate(11.75em,1.75em);
+	position: absolute;
+	height: 6.5em;
+	width: 6.5em;
+	border-radius: 50%;
+	background-color: #ffeccf;
+	box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+	transition: background-color 250ms,border-color 250ms,transform 1500ms cubic-bezier(.26,2,.46,.71);
+
+}
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button{
+background-color: #485367;
+box-shadow: inset 0px 0px 0px 0.75em white;
+transform: translate(1.75em,1.75em);
+
 }
 
-#navbar ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 10px;
-  position: relative;
+.sun-icon{
+	position: absolute;
+	height: 6em;
+	width: 6em;
+	color: #ffbb52;
 }
 
-#navbar ul li a {
-  text-decoration: none;
-  color: whitesmoke;
-  text-transform: uppercase;
+.sun-icon-wrapper{
+	position: absolute;
+	height: 6em;
+	width: 6em;
+	opacity: 1;
+	transform: translate(2em ,2em) rotate(15deg);
+	transform-origin: 50% 50%;
+	transition: opacity 150ms,transform 1500ms cubic-bezier(.26,2,.46,.71)
 }
 
-#navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #009688;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper{
+
+opacity: 0;
+transform: translate(3em,2em) rotate(0deg);
 }
 
-#navbar ul li:hover::after {
-  width: 100%;
+.moon-icon{
+	position: absolute;
+	height: 6em;
+	width: 6em;
+	color: white;
 }
 
-.content {
-  width: 100%;
-  position: absolute;
-  top: 80%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: #fff;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+.moon-icon-wrapper{
+	position: absolute;
+	height: 6em;
+	width: 6em;
+	opacity: 0;
+	transform: translate(11em ,2em) rotate(0deg);
+	transform-origin: 50% 50%;
+	transition: opacity 150ms,transform 1500ms cubic-bezier(.26,2,.46,.71)
 }
 
-.content h1 {
-  font-size: 70px;
-  margin-top: 80px;
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper{
+
+opacity: 1;
+transform: translate(12em,2em) rotate(-15deg);
 }
 
-
-
-
-
-/* PRODUCTS */
-.product {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-}
-
-.product-category {
-  padding: 0 10vw;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 40px;
-  text-transform: capitalize;
-}
-
-.product-container {
-  padding: 0 10vw;
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.product-container::-webkit-scrollbar {
-  display: none;
-}
-
-.product-card {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 450px;
-  margin-right: 40px;
-}
-
-.product-image {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-}
-
-.product-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.discount-tag {
-  position: absolute;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  color: #ff7d7d;
-  right: 10px;
-  top: 10px;
-  text-transform: capitalize;
-}
-
-.card-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  width: 90%;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
-  background: #fff;
-  border-radius: 5px;
-  transition: 0.5s;
-  cursor: pointer;
-  opacity: 0;
-}
-
-.product-card:hover .card-btn {
-  opacity: 1;
-}
-
-.card-btn:hover {
-  background: #ff7d7d;
-  color: #fff;
-}
-
-.product-info {
-  width: 100%;
-  height: 100px;
-  padding-top: 10px;
-}
-
-.product-brand {
-  text-transform: uppercase;
-}
-
-.product-short-description {
-  width: 100%;
-  height: 20px;
-  line-height: 20px;
-  overflow: hidden;
-  opacity: 0.5;
-  text-transform: capitalize;
-  margin: 5px 0;
-}
-
-.price {
-  font-weight: 900;
-  font-size: 20px;
-}
-
-.actual-price {
-  margin-left: 20px;
-  opacity: 0.5;
-  text-decoration: line-through;
-}
-
-.pre-btn,
-.nxt-btn {
-  border: none;
-  width: 10vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  cursor: pointer;
-  z-index: 8;
-}
-
-.pre-btn {
-  left: 0;
-  transform: rotate(180deg);
-}
-
-.nxt-btn {
-  right: 0;
-}
-
-.pre-btn img,
-.nxt-btn img {
-  opacity: 0.2;
-}
-
-.pre-btn:hover img,
-.nxt-btn:hover img {
-  opacity: 1;
-}
-
-.collection-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-
-.collection {
-  position: relative;
-}
-
-.collection img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.collection p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  font-size: 50px;
-  text-transform: capitalize;
-}
-
-.collection:nth-child(3) {
-  grid-column: span 2;
-  margin-bottom: 10px;
-}

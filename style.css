@@ -19,6 +19,9 @@
     border-radius: 6px;
     
   }
+  .item,.form-group{
+    color: #000;
+  }
   p{
     text-align: start;
   }
@@ -81,8 +84,37 @@
     transition: color 0.3s ease;
 }
 
-#main-menu li a:hover {
-    color: #ff9900; /* Change to your desired hover color */
+/* #main-menu li a:hover {
+    color: #ff9900; /* Change to your desired hover color 
+    
+} */
+#main-menu li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+#main-menu li:hover::after {
+    width: 100%;
+    
+}
+#recruitment #c1::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+#recruitment #c1:hover::after {
+    width: 100%;
+    
 }
 
 /* Styling for the logo */
@@ -400,7 +432,7 @@ nav {
     ul.sm-clean>li>a:active {
         font-size: 16px;
         text-transform: uppercase;
-        padding: 20px 8px
+        padding: 15px 8px 10px 8px;
     }
 
     .sm-clean a:hover,
@@ -408,7 +440,7 @@ nav {
     .sm-clean a:active,
     .sm-clean a.highlighted {
         color: #198C46;
-        background: #FDFDFD
+        /* background: #FDFDFD */
     }
 
     .sm-clean a.current {
@@ -993,9 +1025,9 @@ html[xmlns] .flexslider .slides {
     text-indent: -9999px
 }
 
-.flex-control-paging li a:hover {
+/* .flex-control-paging li a:hover {
     background: #fff
-}
+} */
 
 .flex-control-paging li a.flex-active {
     background: #96CA2D !important;
@@ -1185,8 +1217,9 @@ a:focus {
 }
 
 body {
+    background-color: #0d47a1;
     font-size: 16px;
-    color: #616161;
+    color: #fff;
     line-height: 1.5;
     font-family: 'Muli', sans-serif
 }
@@ -1231,11 +1264,11 @@ option {
 }
 
 .gap-top-2x {
-    margin-top:  0px
+    margin-top:  15px
 }
 
 .gap-bottom-2x {
-    margin-bottom: 0px
+    margin-bottom: 15px
 }
 
 .gap-bottom {
@@ -1296,7 +1329,7 @@ option {
 }
 
 .intro {
-    background: #fff;
+    background: #0d47a1;
     padding: 30px 0px;
     border-bottom: 3px solid #87ceeb;
 }
@@ -1609,7 +1642,6 @@ input[type="email"] {
 
 
 #owl-demo1 .item {
-    height: 415px;
     width: 259px;
     padding: 10px 17px;
 
@@ -1626,14 +1658,12 @@ input[type="email"] {
     
 	color:#fff}	*/
 
-.porfile-group .list-group-item {
+.porfile-group  {
     border: none;
-
-    border-bottom: 2px solid #ddd;
-
+    width: auto;
     margin-bottom: 0;
 
-    border-radius: 0;
+    border-radius: 5px;
 
 }
 
@@ -2129,13 +2159,13 @@ input[type="email"] {
 }
 
 .footer {
-    background: #fff;
+    background: #0d47a1;
 
     padding-top: 30px;
 
     padding-bottom: 15px;
 
-    color: #424141
+    color: #fff
 }
 
 .footer-link {
@@ -2148,7 +2178,7 @@ input[type="email"] {
 }
 
 .footer-link li a {
-    color: #424141;
+    color: #fff;
 
     display: block;
 
@@ -2157,19 +2187,19 @@ input[type="email"] {
 }
 
 .footer-link li a:hover {
-    color: #424141;
+    color: #000;
 
 }
 
 .footer h3 {
-    color: #424141;
+    color: #fff;
 
     font-weight: 700;
 
 }
 
 .call-info a {
-    color: #424141;
+    color: #fff;
 
 }
 
@@ -2268,6 +2298,7 @@ a.read-more:hover {
 }
 
 #owl-demo h3 {
+    border-bottom: 2px solid #009688;
     font-size: 24px;
 
     min-height: 61px;
@@ -2275,6 +2306,7 @@ a.read-more:hover {
     line-height: 1.25;
 
 }
+
 
 @media screen and (max-width: 1199px) {
     .flex-caption img {
