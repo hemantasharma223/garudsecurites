@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (scrollTop < content.offsetTop) {
             navbar.classList.remove("fixed-nav");
-            
-            
         } else {
             navbar.classList.add("fixed-nav");
         }

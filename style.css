@@ -1242,7 +1242,9 @@ h6 {
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    border-radius: 5px;
+    
 }
 
 option {
@@ -1528,12 +1530,12 @@ option {
 }
 
 a {
-    color: #f08080;
+    color: #fff;
 
 }
 
 a:hover {
-    color: #caa344;
+    color: #00ffff;
 
     text-decoration: underline;
 
