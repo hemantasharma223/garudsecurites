@@ -3,7 +3,7 @@
     z-index: 999
 }
 .serviceWrap{
-    background-color: #0d47a1;
+    
     display: flex;
 }
 .recruitment-container{
@@ -33,7 +33,7 @@
 
 /* Basic styling for the navigation container */
 #main-nav {
-    background-color: #333;
+    background-color: #58C3ED;
     padding: 5px;
 }
 
@@ -92,7 +92,7 @@
     content: "";
     height: 3px;
     width: 0;
-    background: #009688;
+    background: #f7497d;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -264,7 +264,7 @@ nav {
 }
 
 .top-nav {
-    background: #333;
+    background: #58C3ED;
     margin-bottom: 0;
     padding-left: 0px
 }
@@ -891,8 +891,8 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-    *height: 0;
-    *height: 0;
+    height: 0;
+    height: 0;
 }
 
 .flex-direction-nav a {
@@ -1331,7 +1331,7 @@ option {
 }
 
 .intro {
-    background: #0d47a1;
+    
     padding: 30px 0px;
     border-bottom: 3px solid #87ceeb;
 }
@@ -1408,7 +1408,7 @@ option {
 
 .inquery {
     padding: 15px 30px;
-    border-left: 1px solid #ddd
+    border-left: 1px solid #ddd;
 }
 
 .inquery .input-group[class*="col-"] {
@@ -2161,7 +2161,6 @@ input[type="email"] {
 }
 
 .footer {
-    background: #0d47a1;
 
     padding-top: 30px;
 

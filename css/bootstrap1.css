@@ -1516,6 +1516,9 @@
  	.col-sm-8{
  	width: 66.66%;
  	}
+	 .col-sm-08{
+		width: 62.66%;
+		}
  	.col-sm-7{
  	width:58.33333333%
  	}
@@ -1669,7 +1672,7 @@
  width:91.66666667%
  }
  	.col-md-10{
- 	width:83.33333333%
+ 	width:95%;
  	}
  	.col-md-9{
  	width:75%
